@@ -1,14 +1,37 @@
 <!doctype html>
 <html lang="sv">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Webbutveckling - Ramschema</title>
-    <link rel="stylesheet" href="/src/css/styles.css">
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/js/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Webbutveckling - Ramschema</title>
+  <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+
+<body>
+  <main class="container">
+    <h1>Webbutveckling - Ramschema</h1>
+
+    <div class="search">
+      <label for="search">Sök:</label>
+      <input type="text" id="search" placeholder="Sök efter kurskod eller kursnamn" />
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Kurskod</th>
+          <th>Namn</th>
+          <th>Progression</th>
+        </tr>
+      </thead>
+      <tbody id="course-table">
+      </tbody>
+    </table>
+  </main>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+
 </html>
